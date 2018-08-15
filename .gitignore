@@ -1,0 +1,12 @@
+# dependencies
+node_modules
+*.swp
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+config

@@ -1,0 +1,233 @@
+html, body{
+  width: 100%;
+  font-size: 14px !important;
+  height: 100% !important;
+}
+// 翻页
+.pagination{
+  position: absolute;
+  right: 20px;
+}
+// 非空
+.nut-null{
+  position: relative;
+  top: -2px;
+  color: red;
+}
+// 按钮的高度
+.btn{
+  height: 36px !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  a{
+    color: #fff !important;
+  }
+}
+img{
+  max-width: 80px !important;
+  max-height: 80px !important;
+  margin-right: 10px !important;
+}
+.nodata{
+  height: 30px;
+  line-height: 30px;
+  margin: 10px 0;
+  p{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+}
+// 输入框圆角
+input, textarea{
+  border-radius: 3px !important;
+}
+// 新增输入框样式
+.input-group{
+  .input-group-prepend{
+    position: relative;
+    margin-right: 10px;
+    width: 84px !important;
+    .input-group-text{
+      font-size: 14px !important;
+      position: absolute;
+      top: 0;
+      border: none !important;
+    }
+  }
+  input.form-control,
+  select.form-control {
+    font-size: 14px !important;
+    height: 38px !important;
+  }
+  .text-control{
+    position: relative;
+    -ms-flex: 1 1 auto;
+    display: table-cell;
+    flex: 1 1 auto;
+    width: 1%;
+    padding: 4px 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #495057;
+  }
+}
+// 新增页面底部按钮（确定、取消）
+.footer-box {
+  margin: 10px 0 10px 10px !important;
+  .ok-btn{
+    margin-right: 20px !important;
+  }
+  .cancel-btn{
+    color: #999 !important;
+  }
+}
+input,
+select,
+textarea{
+  border-radius: 0 !important;
+}
+// 禁用的输入框背景色
+input[disabled],
+select[disabled],
+textarea[disabled]  {
+  background-color: #eee !important;
+}
+// 列表操作符号大小
+.opers {
+  a{
+    i{
+      font-size: 18px !important;
+      margin: 0 3px;
+    }
+  }
+}
+// 多页面导航
+.nav-self-box{
+  width: 100%;
+  height: 100%;
+  .nav-tab{
+    border-bottom: 1px solid #f4f4f4;
+    li{
+      display: block;
+      height: 40px;
+      line-height: 34px;
+      position: relative;
+      float: left;
+      border-top: 3px solid transparent;
+      margin-bottom: -2px;
+      margin-right: 5px;
+      a{
+        position: relative;
+        top: 2px;
+        padding: 10px 15px;
+        color: #444;
+      }
+    }
+    li:hover{
+      a{
+        color: #999;
+      }
+    }
+    li:nth-child(0){
+      a{
+        border-left: none;
+      }
+    }
+    li.active{
+      border-top-color: #3c8dbc;
+      a{
+        border-left: 1px solid #f4f4f4;
+        border-right: 1px solid #f4f4f4;
+        border-bottom: 1px solid #fff;
+      }
+    }
+    li.active:hover{
+      cursor: Default;
+    }
+  }
+}
+
+// 列表操作区高度
+.con-box{
+  .box-header{
+    margin: 10px 0;
+    .col-md-12, .col-md-11, 
+    .col-md-10, .col-md-9,
+    .col-md-8, .col-md-7,
+    .col-md-6, .col-md-5,
+    .col-md-4, .col-md-3,
+    .col-md-2, .col-md-1{
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+// 分组分类样式
+.stacked-box{
+  border-top: 3px solid #d2d6de;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  .box-header{
+    padding: 10px;
+    border-bottom: 1px solid #f4f4f4;
+  }
+  .nav-stacked{
+    li.item{
+      position: relative;
+      border-bottom: 1px solid #f4f4f4;
+      cursor: pointer;
+      a{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 10px 15px;
+        border-left: 3px solid transparent;
+        color: #444;
+        .fa{
+          display: none;
+          position: relative;
+          float: right;
+          top: 4px;
+          font-size: 16px;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+      }
+      a.active{
+        border-left-color: #3c8dbc;
+      }
+      .switch-plug{
+        float: right;
+        cursor: pointer;
+      }
+    }
+    .plus-item{
+      padding: 10px 15px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .plus-item:hover{
+      a{
+        color: #8f9396;
+      }
+    }
+    li.item:hover{
+      a{
+        border-left-color: #3c8dbc;
+      }
+      .fa{
+        display: inline-block;
+      }
+    }
+  }
+}
+
+// 模态框显示
+.show.modal{
+  opacity: 1 !important;
+}
+.alert-error{
+  background-color: #f5d2d2 !important;
+}
